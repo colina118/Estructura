@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="Estructura" Database="">
+  <Project Name="Tarea1Ejercicio1" Path="Tarea1Ejercicio1/Tarea1Ejercicio1.project" Active="No"/>
+  <Project Name="Tarea1Ejercicio2" Path="Tarea1Ejercicio2/Tarea1Ejercicio2.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Project Name="Tarea1Ejercicio1" ConfigName="Debug"/>
+      <Project Name="Tarea1Ejercicio2" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="Tarea1Ejercicio1" ConfigName="Release"/>
+      <Project Name="Tarea1Ejercicio2" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
