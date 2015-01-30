@@ -1,23 +1,18 @@
 #include <iostream>
 
 int posibles(int, int , int, int);
+const int abajo = 2;
+const int alado = 3;
 int main(int argc, char **argv)
 {
 	int reng;
 	int colu;
-	int ** matriz;
     
 	
 	std::cout << "Mete el numero de renglones" << std::endl;
 	std::cin >> reng;
 	std::cout << "Mete el numero de columnas" << std::endl;
 	std::cin>> colu;
-    
-    matriz = new int*[reng];
-	 for(int i = 0; i < reng; i++)
-    {
-        matriz[i] = new int[colu];
-    }
 	
 	std::cout << "El numero de caminos es: " << posibles(0, 0, reng, colu);
 	
@@ -39,7 +34,7 @@ void imprimeArreglo(T **v, int ren, int col)
 
 int posibles(int ren, int col, int renA, int colA)
 {
-	if(ren >= renA || col >= colA)
+	if(ren > renA || col > colA)
 	{
 		return 0;
 	}
@@ -49,6 +44,6 @@ int posibles(int ren, int col, int renA, int colA)
 	}
 	else
 	{
-		return posibles(ren + 2, col, renA, colA) + posibles(ren, col + 3, renA, colA);
+		return posibles(ren + abajo, col, renA, colA) + posibles(ren, col + alado, renA, colA);
 	}
 }
