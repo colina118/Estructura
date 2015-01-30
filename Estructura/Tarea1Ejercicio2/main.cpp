@@ -4,7 +4,7 @@
 
 template <typename T>
 void imprimeArreglo(T **, int, int);
-bool segunda(int **, int, int, int, int);
+bool segunda(int **, int, int, int, int, int direction);
 int main(int argc, char **argv)
 {
 	srand(time(NULL));
