@@ -1,13 +1,15 @@
 #include <iostream>
 
-//probando
-
 template <class T>
 class Ordenamiento {
 public:
 	static void burbuja(T[], int, bool(*) (T, T));
 	static void insercion(T[], int, bool(*) (T, T));
 	static void seleccion(T[], int, bool(*) (T, T));
+	static void quicksort(T[], int, int, bool(*)(T, T));
+	static void mergesort(T[], int, int, bool(*)(T, T), int);
+	static void merge(T[], int, int, bool(*)(T, T), int);
+
 
 	static bool asc(T, T);
 	static bool desc(T, T);
