@@ -10,6 +10,7 @@ Libro::Libro(std::string t, std::string a, int n, int añ, std::string e, std::st
 
 }
 
+
 std::ostream & operator <<(std::ostream & os, Libro & libro)
 {
 	os << libro.titulo << " "<< libro.autor  << " " << libro.edicion << " " << libro.editorial << " " << libro.numPaginas << " " << libro.año << " " << std::endl;

@@ -28,6 +28,7 @@ public:
 	std::string getEdicion(){ return edicion; }
 
 	bool operator == (Libro &);
+	bool operator != (Libro &);
 	bool operator > (Libro &);
 
 
