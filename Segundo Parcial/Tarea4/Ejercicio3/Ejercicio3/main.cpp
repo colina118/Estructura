@@ -63,17 +63,17 @@ void menu()
 	int opcion = -10;
 	while (opcion != 0)
 	{
-		std::cout << "\tBienvenido" << std::endl;
-		std::cout << "Dame una opción" << std::endl;
+		std::cout << "Bienvenido" << std::endl;
+		std::cout << "Elija una opción" << std::endl;
 		std::cout << std::endl;
-		std::cout << "1. Abrir Archivo" << std::endl;
+		std::cout << "1. Abrir algun archivo o escribir el nombre del archivo nuevo" << std::endl;
 		std::cout << "2. Añadir una linea" << std::endl;
 		std::cout << "3. Añadir una palabra" << std::endl;
 		std::cout << "4. Borrar la ultima linea" << std::endl;
 		std::cout << "5. Borrar la ultima palabra" << std::endl;
 		std::cout << "6. Ir al inicio de una linea" << std::endl;
 		std::cout << "7. Ir al final de una linea" << std::endl;
-		std::cout << "8. Mostrar Documento" << std::endl;
+		std::cout << "8. Imprimir lo que hay en el documento" << std::endl;
 		std::cout << "9. Guardar Cambios" << std::endl;
 		std::cout << "0. Salir" << std::endl;
 		std::cin >> opcion;
