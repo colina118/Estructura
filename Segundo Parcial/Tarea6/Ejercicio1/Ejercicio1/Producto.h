@@ -8,8 +8,8 @@ private:
 	int precio;
 	int cantidad;
 public:
-	~Producto();
-	//Producto() { "", 0, 0; }
+	~Producto() {}
+	Producto(): Producto("", 0, 0) {}
 	Producto(std::string _nombre, int _precio, int _cantidad) : nombre(_nombre), precio(_precio), cantidad(_cantidad) {}
 
 	void setNombre(std::string _nombre) { nombre = _nombre; }
@@ -19,12 +19,13 @@ public:
 	std::string getNombre(){ return nombre; }
 	int getPrecio(){ return precio; }
 	int getCantidad(){ return cantidad; }
+	int getTotal(){ return precio * cantidad; }
 
 	friend std::ostream & operator <<(std::ostream & os, Producto &);
 };
 
 std::ostream & operator <<(std::ostream & os, Producto & producto)
 {
-	os << producto.nombre << producto.cantidad << producto.precio << std::endl;
+	os << producto.nombre << "  " << producto.cantidad << "  " << producto.precio << "  " << std::endl;
 	return os;
-}
+}	
